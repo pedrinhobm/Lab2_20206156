@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Configuración</title>
+    </head>
+    <body>
+        <h1>Configuración del Juego del Bingo</h1>
+        <form action="#" th:action="@{/guardarConfiguracion}" method="post">
+            <label for="tamanhoTarjeta">Tamaño de la tarjeta:</label>
+            <input type="number" id="tamanhoTarjeta" name="tamanhoTarjeta"><br><br>
+
+            <label for="numeroTarjeta">Número de tarjetas:</label>
+            <input type="number" id="numeroTarjeta" name="numeroTarjeta"><br><br>
+
+            <button type="submit">Generar Tarjetas</button>
+        </form>
+    </body>
+</html>

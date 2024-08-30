@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Juego de Bingo</title>
+    </head>
+    <body>
+        <h1>Juego de Bingo</h1>
+
+        <div>
+            {%
+            for(let i = 0; i< numeroTarjeta ; i++)
+            ?=
+            <p>Tarjeta ${i}</p>
+
+            =?
+            %}
+        </div>
+        <label for="random">Ingresar Números de Bingo:</label>
+        <button> Mark </button>
+        <input type="number" id="random" name="random" th:value="*{numero}" required />
+        <a href="configuracion/">Reiniciar Juego</a>
+    </body>
+</html>
